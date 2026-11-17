@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>每天怎麼吃才健康？｜教學簡報</title>
+
+<style>
+:root {
+    font-family: system-ui, -apple-system,
+                 "Noto Sans TC", sans-serif;
+    color: #163a2c;
+    background: #eaf2eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.deck {
+    max-width: 1100px;
+    margin: 4vh auto 0;
+    padding: 20px;
+}
+
+.slide {
+    display: none;
+    min-height: 68vh;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: clamp(25px, 6vw, 75px);
+    box-shadow: 0 12px 50px #204b3220;
+    position: relative;
+}
+
+.slide.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.eyebrow {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #55856d;
+}
+
+h1 {
+    font-size: clamp(28px, 4.5vw, 55px);
+    margin: 25px 0;
+    color: #176c4c;
+}
+
+ul {
+    font-size: clamp(16px, 2vw, 23px);
+    line-height: 1.75;
+    padding-left: 1.4em;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+footer {
+    margin-top: auto;
+    padding-top: 25px;
+    font-size: 14px;
+    color: #687b70;
+}
+
+a {
+    color: #176c4c;
+    margin-right: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 24px;
+}
+
+button {
+    border: 0;
+    border-radius: 12px;
+    padding: 13px 22px;
+    background: #176c4c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+#counter {
+    min-width: 70px;
+    text-align: center;
+}
+
+.warn {
+    color: #9b5810;
+}
+
+@media(max-width:600px) {
+    .deck {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .slide {
+        min-height: 76vh;
+        border-radius: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<main class="deck">
+
+    <section class="slide">
+        <span class="eyebrow">
+            HEALTHY DIET WIKI · 01
+        </span>
+
+        <h1>健康飲食是什麼？</h1>
+
+        <ul><li>健康飲食是什麼？</li><li>健康飲食能維持或改善整體健康，為身體提供水分、巨量營養素如蛋白質、微量營養素如維生素，以及足夠的纖維和食物熱量 [S01]。</li><li>健康飲食可能包含水果、蔬菜和全穀物，且可能含有很少或不含超加工食品或含糖飲料 [S01]。</li><li>健康需求可以透過多種植物性與動物性食物來滿足，但採取純素飲食者需要額外的維生素 B12 來源 [S01]。</li><li>保持健康飲食並配合保持活躍，有助於糖尿病患者控制血糖 [S01]。</li></ul>
+
+        
+
+        <footer>
+            Wiki 來源：<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Healthy_diet">S01</a> 
+        </footer>
+    </section>
+    
+    <section class="slide">
+        <span class="eyebrow">
+            HEALTHY DIET WIKI · 02
+        </span>
+
+        <h1>均衡飲食的基本原則</h1>
+
+        <ul><li>均衡飲食的基本原則</li><li>健康飲食應提供身體所需的營養，包含水份、巨量營養素如蛋白質、微量營養素如維生素，以及充足的纖維與熱量 [S01]。</li><li>建議多攝取未加工或少加工的原型食物，飲食以植物性食物為主，並包含水果、蔬菜、全穀物、豆類與堅果等 [S01]。</li><li>應減少食用高度加工食品與含糖飲料，並降低飽和脂肪、鹽分以及紅肉的攝取量 [S01]。</li><li>建議維持身體活動並保持健康的體重，同時結合健康飲食來幫助糖尿病患者控制血糖 [S01]。</li></ul>
+
+        
+
+        <footer>
+            Wiki 來源：<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Healthy_diet">S01</a> 
+        </footer>
+    </section>
+    
+    <section class="slide">
+        <span class="eyebrow">
+            HEALTHY DIET WIKI · 03
+        </span>
+
+        <h1>認識食物分類</h1>
+
+        <ul><li>認識食物分類</li><li>食物分類是為了教育目的而將食物分組，通常會把具有相似營養特性或生物分類的食物歸納在一起 [S02]。</li><li>食物分類最初是公眾健康教育的概念，用來教導飲食非常受限且單調的人們如何避免特定營養素缺乏 [S02]。</li><li>隨著時間發展，食物分類的概念已被調整，以因應與飲食相關的富裕疾病，例如肥胖症、糖尿病和心臟病 [S02]。</li><li>常見的食物分類數量會依據定義者的不同而有所差異，例如加拿大飲食指南僅承認四個官方食物分類 [S02]。</li></ul>
+
+        
+
+        <footer>
+            Wiki 來源：<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Food_group">S02</a> 
+        </footer>
+    </section>
+    
+    <section class="slide">
+        <span class="eyebrow">
+            HEALTHY DIET WIKI · 04
+        </span>
+
+        <h1>醣類提供什麼？</h1>
+
+        <ul><li>簡報標題：醣類提供什麼？</li><li>醣類包含糖類與多醣類（如澱粉），是生物分子中的主要家族之一 [S04]。</li><li>多醣類在生物體中可作為能量儲存（例如澱粉與糖原），並作為結構組分（例如植物中的纖維素） [S04]。</li><li>纖維素與不溶性膳食纖維雖然無法被人體消化，但能透過促進排便來幫助維持健康的消化系統 [S04]。</li><li>飲食中的醣類具有提升血糖的潛力，其特性可透過升糖指數（GI）與升糖負荷來進行評估 [S04]。</li></ul>
+
+        
+
+        <footer>
+            Wiki 來源：<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Carbohydrate">S04</a> 
+        </footer>
+    </section>
+    
+    <section class="slide">
+        <span class="eyebrow">
+            HEALTHY DIET WIKI · 05
+        </span>
+
+        <h1>蛋白質的重要性</h1>
+
+        <ul><li>蛋白質的重要性</li><li>蛋白質是人體不可或缺的營養素，作為身體組織的構成成分之一，也能提供熱量來源 [S05]。</li><li>從營養學的角度來看，蛋白質最具決定性的特徵是其胺基酸組成，且食物中的蛋白質含量通常依氮含量來測量 [S05]。</li><li>蛋白質作為燃料時，其能量密度與碳水化合物相同，每公克含有 17 千焦耳（4 大卡） [S05]。</li><li>健康飲食的原則包含攝取多樣化的蛋白質來源，例如魚類、海鮮與瘦禽肉，同時限制紅肉的攝取 [S01]。</li></ul>
+
+        
+
+        <footer>
+            Wiki 來源：<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Protein_(nutrient)">S05</a> <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Dietary_fiber">S06</a> <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Healthy_diet">S01</a> 
+        </footer>
+    </section>
+    
+    <section class="slide">
+        <span class="eyebrow">
+            HEALTHY DIET WIKI · 06
+        </span>
+
+        <h1>膳食纖維的功能</h1>
+
+        <ul><li>膳食纖維的功能</li><li>由於人體缺乏分解其糖苷鍵所需的酵素，膳食纖維會到達大腸，並透過糞便增加（bulking）、黏性（viscosity）與發酵（fermentation）三種主要機制對健康做出貢獻 [S06]。</li><li>持續攝取可發酵纖維可能有助於降低慢性疾病的風險，而飲食中膳食纖維不足則可能導致便秘 [S06]。</li><li>多種膳食纖維能帶來不同的健康效益，例如纖維素能增加糞便體積並預防便秘，而抗性澱粉則能增加糞便體積、促進結腸發酵、調節結腸微flora、增加飽足感與胰島素敏感性 [S06]。</li></ul>
+
+        
+
+        <footer>
+            Wiki 來源：<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Dietary_fiber">S06</a> 
+        </footer>
+    </section>
+    
+    <section class="slide">
+        <span class="eyebrow">
+            HEALTHY DIET WIKI · 07
+        </span>
+
+        <h1>健康飲食怎麼應用？</h1>
+
+        <ul><li>健康飲食怎麼應用？</li><li>健康飲食能維持或改善整體健康，為身體提供水分、巨量營養素如蛋白質、微量營養素如維生素，以及充足的纖維和食物熱量 [S01]。</li><li>健康飲食可包含水果、蔬菜和全穀物，並可減少或不吃極度加工食品與含糖飲料，且營養需求可透過多種植物性與動物性食物來滿足 [S01]。</li><li>證據強烈支持健康飲食的主題，強調以接近大自然、未經多度加工且以植物為主的全食物，能促進健康並預防疾病 [S01]。</li><li>建議保持活躍並維持健康的體重，健康的飲食結合規律運動，也能協助糖尿病患者控制血糖 [S01]。</li></ul>
+
+        
+
+        <footer>
+            Wiki 來源：<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Healthy_diet">S01</a> 
+        </footer>
+    </section>
+    
+    <section class="slide">
+        <span class="eyebrow">
+            HEALTHY DIET WIKI · 08
+        </span>
+
+        <h1>總結與複習</h1>
+
+        <ul><li>總結與複習</li><li>健康飲食包含充足的水果、蔬菜、全穀物、豆類、堅果、種子、植物性蛋白質與油性魚類，並減少飽和脂肪、鹽分和超加工食品的攝取 [S01]。</li><li>膳食纖維存在於植物中，穀物麩皮製品如粗玉米麩與粗小麥麩的纖維含量最高，常作為加工食品的原料 [S06]。</li><li>膳食纖維能帶來三大主要貢獻：增加糞便體積、黏性與發酵作用，且不同的纖維透過不同機制共同促進整體健康 [S06]。</li><li>醫療權威機構建議在標準美式飲食中添加富含纖維的產品，並將健康成人的最低攝取量設定為 30 克 [S06]。</li></ul>
+
+        
+
+        <footer>
+            Wiki 來源：<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Dietary_fiber">S06</a> <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Healthy_diet">S01</a> 
+        </footer>
+    </section>
+    
+
+<div class="controls">
+    <button id="prev" onclick="move(-1)">
+        上一頁
+    </button>
+
+    <span id="counter"></span>
+
+    <button id="next" onclick="move(1)">
+        下一頁
+    </button>
+</div>
+
+</main>
+
+<script>
+let index = 0;
+
+const slides = [
+    ...document.querySelectorAll('.slide')
+];
+
+function show() {
+    slides.forEach((s, i) =>
+        s.classList.toggle('active', i === index)
+    );
+
+    document.getElementById('counter').textContent =
+        (index + 1) + ' / ' + slides.length;
+
+    document.getElementById('prev').disabled =
+        index === 0;
+
+    document.getElementById('next').disabled =
+        index === slides.length - 1;
+}
+
+function move(d) {
+    index = Math.max(
+        0,
+        Math.min(slides.length - 1, index + d)
+    );
+
+    show();
+}
+
+document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') move(1);
+    if (e.key === 'ArrowLeft') move(-1);
+});
+
+show();
+</script>
+
+</body>
+</html>
